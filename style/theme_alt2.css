@@ -1,21 +1,25 @@
 :root {
-    --bg: hsl(220, 5%, 8%);
-    --fg: hsl(228,3%,66%);
-    --fgShadow: hsl(208,8%,68%);
-    --headerBg: hsl(220, 5%, 12%);
-    --headerHi: hsl(228,57%,73%);
-    --headerFg: hsl(228,3%,66%);
-    --extBgHi: hsl(228,57%,73%);
-    --extFgHi: hsl(228,3%,86%);
+    --bg: hsl(0,0%,100%);
+    --fg: hsl(207,5%,58%);
+    --fgShadow: hsl(207,5%,69%);
+    --headerBg: hsl(240,3%,96%);
+    --headerHi: hsl(0,0%,28%);
+    --headerHiShadow: hsl(0,0%,38%);
+    --headerFg: hsl(228,57%,73%);
+    --headerFgShadow: hsl(228,3%,75%);
+    --extBgHi:hsl(240,3%,96%);
+    --extFgHi: hsl(0,0%,28%);
     --extEn: hsl(228,57%,73%);
-    --extEnHi: hsl(228,3%,86%);
-    --menuBg: hsl(240,2%,19%);
-    --menuFgAct: hsl(210,2%,81%);
-    --menuFgActHi: hsl(210,2%,95%);
-    --menuBgHi: hsl(228,57%,69%);
-    --menuBgHi2: hsl(349,60%,59%);
-    --desc: hsl(228,3%,66%);
-    --descShadow: hsl(228,3%,69%);
+    --extEnShadow: hsl(0,0%,40%);
+    --extEnHi: hsl(228,59%,76%);
+    --extEnHiShadow: hsl(0,0%,35%);
+    --menuBg: hsl(240,5%,78%);
+    --menuFgAct: hsl(360,100%,100%);
+    --menuFgActHi: hsl(0, 0%, 94%);
+    --menuBgHi: hsl(228,57%,73%);
+    --menuBgHi2: hsl(349,97%,76%);
+    --desc: hsl(0,0%,28%);
+    --descShadow: hsl(0,0%,38%);
 }
 
 @font-face {
