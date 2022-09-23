@@ -14,9 +14,9 @@ function setLight() {
         optAlt2.classList.remove('enabled');
         document.body.style.setProperty('--accent', 'hsl(349, 83%, 61%)');
         document.body.style.setProperty('--bg', 'hsl(0, 0%, 100%)');
-        document.body.style.setProperty('--headerBg', 'hsl(240,3%,96%)');
+        document.body.style.setProperty('--headerBg', 'hsl(0,0%,28%)');
         document.body.style.setProperty('--headerFg', 'hsl(349, 83%, 61%)');
-        document.body.style.setProperty('--headerAccent', 'hsl(0,0%,28%)');
+        document.body.style.setProperty('--headerAccent', 'hsl(240,3%,96%)');
         document.body.style.setProperty('--fg', 'hsl(240, 5%, 69%)');
         document.body.style.setProperty('--secondFg', 'hsl(0,0%,28%)');
         setTheme();
@@ -30,11 +30,11 @@ function setDark() {
         optDark.classList.add('enabled');
         optAlt.classList.remove('enabled');
         optAlt2.classList.remove('enabled');
-        document.body.style.setProperty('--accent', 'hsl(228,57%,73%)');
-        document.body.style.setProperty('--bg', 'hsl(0,0%,10%)');
-        document.body.style.setProperty('--headerBg', 'hsl(240,3%,12%)');
+        document.body.style.setProperty('--accent', 'hsl(174,100%,33%)');
+        document.body.style.setProperty('--bg', 'hsl(210,18%,13%)');
+        document.body.style.setProperty('--headerBg', 'hsl(208,18%,17%)');
         document.body.style.setProperty('--headerFg', 'hsl(228,3%,66%)');
-        document.body.style.setProperty('--headerAccent', 'hsl(228,57%,73%)');
+        document.body.style.setProperty('--headerAccent', 'hsl(174,100%,33%)');
         document.body.style.setProperty('--fg', 'hsl(228,3%,66%)');
         document.body.style.setProperty('--secondFg', 'hsl(208,8%,48%)');
         setTheme();
@@ -50,7 +50,7 @@ function setAlt() {
         optAlt2.classList.remove('enabled');
         document.body.style.setProperty('--accent', 'hsl(228, 57%, 73%)');
         document.body.style.setProperty('--bg', 'hsl(0, 0%, 100%)');
-        document.body.style.setProperty('--headerBg', 'hsl(0, 0%, 99%)');
+        document.body.style.setProperty('--headerBg', 'hsl(0, 0%, 98%)');
         document.body.style.setProperty('--headerFg', 'hsl(228, 57%, 73%)');
         document.body.style.setProperty('--headerAccent', 'hsl(0,0%,28%)');
         document.body.style.setProperty('--fg', 'hsl(240, 5%, 69%)');
@@ -66,11 +66,11 @@ function setAlt2() {
         optDark.classList.remove('enabled');
         optAlt.classList.remove('enabled');
         optAlt2.classList.add('enabled');
-        document.body.style.setProperty('--accent', 'hsl(197, 67%, 48%)');
+        document.body.style.setProperty('--accent', 'hsl(228,57%,73%)');
         document.body.style.setProperty('--bg', 'hsl(220, 5%, 8%)');
-        document.body.style.setProperty('--headerBg', 'hsl(220, 5%, 7%)');
+        document.body.style.setProperty('--headerBg', 'hsl(220, 5%, 12%)');
         document.body.style.setProperty('--headerFg', 'hsl(228,3%,66%)');
-        document.body.style.setProperty('--headerAccent', 'hsl(197, 67%, 48%)');
+        document.body.style.setProperty('--headerAccent', 'hsl(228,57%,73%)');
         document.body.style.setProperty('--fg', 'hsl(228,3%,66%)');
         document.body.style.setProperty('--secondFg', 'hsl(208,8%,48%)');
         setTheme();
@@ -119,7 +119,7 @@ function empty() {
     empty.classList.add('contrast');
     empty.innerHTML = 'nothing to hide';
     show.appendChild(empty);
-}
+};
 
 function showEXT() {
     document.getElementById('hint').style.visibility = 'visible';
@@ -165,9 +165,9 @@ function setup() {
             optLight.classList.add('enabled');
             document.body.style.setProperty('--accent', 'hsl(349, 83%, 61%)');
             document.body.style.setProperty('--bg', 'hsl(0, 0%, 100%)');
-            document.body.style.setProperty('--headerBg', 'hsl(240,3%,96%)');
+            document.body.style.setProperty('--headerBg', 'hsl(0,0%,28%)');
             document.body.style.setProperty('--headerFg', 'hsl(349, 83%, 61%)');
-            document.body.style.setProperty('--headerAccent', 'hsl(0,0%,28%)');
+            document.body.style.setProperty('--headerAccent', 'hsl(240,3%,96%)');
             document.body.style.setProperty('--fg', 'hsl(240, 5%, 69%)');
             document.body.style.setProperty('--secondFg', 'hsl(0,0%,28%)');
         }
@@ -175,7 +175,7 @@ function setup() {
             optAlt.classList.add('enabled');
             document.body.style.setProperty('--accent', 'hsl(228, 57%, 73%)');
             document.body.style.setProperty('--bg', 'hsl(0, 0%, 100%)');
-            document.body.style.setProperty('--headerBg', 'hsl(0, 0%, 99%)');
+            document.body.style.setProperty('--headerBg', 'hsl(0, 0%, 98%)');
             document.body.style.setProperty('--headerFg', 'hsl(228, 57%, 73%)');
             document.body.style.setProperty('--headerAccent', 'hsl(0,0%,28%)');
             document.body.style.setProperty('--fg', 'hsl(240, 5%, 69%)');
@@ -183,21 +183,21 @@ function setup() {
         }
         else if (popup === 'theme_alt2.html') {
             optAlt2.classList.add('enabled');
-            document.body.style.setProperty('--accent', 'hsl(197, 67%, 48%)');
+            document.body.style.setProperty('--accent', 'hsl(228,57%,73%)');
             document.body.style.setProperty('--bg', 'hsl(220, 5%, 8%)');
-            document.body.style.setProperty('--headerBg', 'hsl(220, 5%, 7%)');
+            document.body.style.setProperty('--headerBg', 'hsl(220, 5%, 12%)');
             document.body.style.setProperty('--headerFg', 'hsl(228,3%,66%)');
-            document.body.style.setProperty('--headerAccent', 'hsl(197, 67%, 48%)');
+            document.body.style.setProperty('--headerAccent', 'hsl(228,57%,73%)');
             document.body.style.setProperty('--fg', 'hsl(228,3%,66%)');
             document.body.style.setProperty('--secondFg', 'hsl(208,8%,48%)');
         }
         else {
             optDark.classList.add('enabled');
-            document.body.style.setProperty('--accent', 'hsl(228,57%,73%)');
-            document.body.style.setProperty('--bg', 'hsl(0,0%,10%)');
-            document.body.style.setProperty('--headerBg', 'hsl(240,3%,12%)');
+            document.body.style.setProperty('--accent', 'hsl(174,100%,33%)');
+            document.body.style.setProperty('--bg', 'hsl(210,18%,13%)');
+            document.body.style.setProperty('--headerBg', 'hsl(208,18%,17%)');
             document.body.style.setProperty('--headerFg', 'hsl(228,3%,66%)');
-            document.body.style.setProperty('--headerAccent', 'hsl(228,57%,73%)');
+            document.body.style.setProperty('--headerAccent', 'hsl(174,100%,33%)');
             document.body.style.setProperty('--fg', 'hsl(228,3%,66%)');
             document.body.style.setProperty('--secondFg', 'hsl(208,8%,48%)');
         }
