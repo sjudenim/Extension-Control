@@ -1,21 +1,23 @@
 :root {
-    --bg: hsl(0,0%,10%);
-    --fg: hsl(208,8%,48%);
-    --fgShadow: hsl(208,8%,68%);
-    --headerBg: hsl(240,3%,12%);
-    --headerHi: hsl(228,57%,73%);
+    --bg: hsl(210,18%,13%);
+    --fg: hsl(228,3%,66%);
+    --fgShadow: hsl(228,3%,38%);
+    --headerBg: hsl(208,18%,17%);
+    --headerHi: hsl(174,100%,33%);
     --headerFg: hsl(228,3%,66%);
-    --extBgHi: hsl(228,57%,73%);
-    --extFgHi: hsl(228,3%,86%);
-    --extEn: hsl(228,57%,73%);
-    --extEnHi: hsl(228,3%,86%);
-    --menuBg: hsl(240,2%,19%);
+    --extBgHi:hsl(174,100%,33%);
+    --extFgHi: hsl(228,3%,92%);
+    --extFgHiShadow: hsl(228,3%,46%);
+    --extEn: hsl(174,100%,33%);
+    --extEnHi: hsl(228,3%,92%);
+    --extEnHiShadow: hsl(228,3%,62%);
+    --menuBg: hsl(208,18%,17%);
     --menuFgAct: hsl(210,2%,81%);
     --menuFgActHi: hsl(210,2%,95%);
-    --menuBgHi: hsl(228,57%,69%);
-    --menuBgHi2: hsl(349,60%,59%);
+    --menuBgHi: hsl(174,100%,33%);
+    --menuBgHi2: hsl(357,55%,52%);
     --desc: hsl(228,3%,66%);
-    --descShadow: hsl(228,3%,69%);
+    --descShadow: hsl(228,3%,56%);
 }
 
 @font-face {
@@ -36,7 +38,7 @@ body {
     background: var(--bg);
     color: var(--fg);
     margin: 0;
-    padding: 01px 1px 10px 1px;
+    padding: 1px 1px 10px 1px;
     cursor: default;
     user-select: none;
 }
@@ -45,6 +47,7 @@ body {
 #header {
     position: fixed;
     top: 0;
+    left: -1px;
     font-family: "Raleway-Medium", "Helvetica Neue", "Helvetica", sans-serif;
     font-weight: 600;
     text-align: left;
@@ -69,7 +72,7 @@ body {
 #switcher:hover { overflow-y: overlay; }
 
 .extension {
-    padding: 5px 15px;
+    padding: 5px 25px;
     cursor: pointer;
 }
 .extension div {
@@ -150,11 +153,11 @@ body {
 
 /* Info */
 #txtdiv {
-    padding: 0 15px 0 15px;
+    padding: 0 15px;
     border: 1px solid transparent;
     white-space: normal;
     word-break: break-all;
-    margin-top: 0;
+    margin-top: 0px;
 }
 #txtdiv p {
     margin-block-start: 0;
@@ -167,8 +170,10 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
-.desc { color: var(--desc); }
-
+.desc {
+    font-family: "Raleway-Semibold", "Helvetica Neue", "Helvetica", sans-serif;
+    color: var(--desc);
+}
 #copy { cursor: pointer; }
 
 /* Scrollbar */
