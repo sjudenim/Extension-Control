@@ -2,7 +2,7 @@
     --bg: hsl(0,0%,100%);
     --fg: hsl(207,5%,58%);
     --fgShadow: hsl(207,5%,69%);
-    --headerBg: hsl(0,0%,100%);
+    --headerBg: hsl(0,0%,98%);
     --headerHi: hsl(0,0%,28%);
     --headerHiShadow: hsl(0,0%,38%);
     --headerFg: hsl(228,57%,73%);
@@ -49,6 +49,7 @@ body {
 #header {
     position: fixed;
     top: 0;
+    left: -1px;
     font-family: "Raleway-Medium", "Helvetica Neue", "Helvetica", sans-serif;
     font-weight: 600;
     text-align: left;
