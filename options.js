@@ -26,11 +26,11 @@ function setDark() {
         popup = 'theme_dark.html'
         optLight.classList.remove('enabled');
         optDark.classList.add('enabled');
-        document.body.style.setProperty('--accent', 'hsl(228,57%,73%)');
-        document.body.style.setProperty('--bg', 'hsl(0,0%,10%)');
-        document.body.style.setProperty('--headerBg', 'hsl(240,3%,12%)');
+        document.body.style.setProperty('--accent', 'hsl(349, 83%, 61%)');
+        document.body.style.setProperty('--bg', 'hsl(210,3%,13%)');
+        document.body.style.setProperty('--headerBg', 'hsl(210,2%,15%)');
         document.body.style.setProperty('--headerFg', 'hsl(228,3%,66%)');
-        document.body.style.setProperty('--headerAccent', 'hsl(228,57%,73%)');
+        document.body.style.setProperty('--headerAccent', 'hsl(349, 83%, 61%)');
         document.body.style.setProperty('--fg', 'hsl(228,3%,66%)');
         document.body.style.setProperty('--secondFg', 'hsl(208,8%,48%)');
         setTheme();
@@ -133,11 +133,11 @@ function setup() {
         }
         else {
             optDark.classList.add('enabled');
-            document.body.style.setProperty('--accent', 'hsl(228,57%,73%)');
-            document.body.style.setProperty('--bg', 'hsl(0,0%,10%)');
-            document.body.style.setProperty('--headerBg', 'hsl(240,3%,12%)');
+            document.body.style.setProperty('--accent', 'hsl(349, 83%, 61%)');
+            document.body.style.setProperty('--bg', 'hsl(210,3%,13%)');
+            document.body.style.setProperty('--headerBg', 'hsl(210,2%,15%)');
             document.body.style.setProperty('--headerFg', 'hsl(228,3%,66%)');
-            document.body.style.setProperty('--headerAccent', 'hsl(228,57%,73%)');
+            document.body.style.setProperty('--headerAccent', 'hsl(349, 83%, 61%)');
             document.body.style.setProperty('--fg', 'hsl(228,3%,66%)');
             document.body.style.setProperty('--secondFg', 'hsl(208,8%,48%)');
         }
