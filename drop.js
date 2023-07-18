@@ -1,24 +1,24 @@
 function small() {
-    document.body.style.setProperty('--top', '48px');
+    document.body.style.setProperty('--top', '53px');
     document.body.style.setProperty('--height', '505px');
     var fontsize = document.createElement('style');
-    fontsize.innerHTML = '#header {font-size: 15px} body {font-size: 13px} .options, .uninstall, .info, .hide {font-size: 11px}';
+    fontsize.innerHTML = '#header {font-size: 16px} body {font-size: 13px} .options, .uninstall, .info, .hide {font-size: 11px}';
     document.body.appendChild(fontsize);
 };
 
 function medium() {
-    document.body.style.setProperty('--top', '48px');
+    document.body.style.setProperty('--top', '53px');
     document.body.style.setProperty('--height','510px');
     var fontsize = document.createElement('style');
-    fontsize.innerHTML = '#header {font-size: 16px} body {font-size: 14px} .options, .uninstall, .info, .hide {font-size: 12px}';
+    fontsize.innerHTML = '#header {font-size: 17px} body {font-size: 14px} .options, .uninstall, .info, .hide {font-size: 12px}';
     document.body.appendChild(fontsize);
 };
 
 function large() {
-    document.body.style.setProperty('--top', '48px');
+    document.body.style.setProperty('--top', '53px');
     document.body.style.setProperty('--height', '515px');
     var fontsize = document.createElement('style');
-    fontsize.innerHTML = '#header {font-size: 17px} body {font-size: 15px} .options, .uninstall, .info, .hide {font-size: 13px}';
+    fontsize.innerHTML = '#header {font-size: 18px} body {font-size: 15px} .options, .uninstall, .info, .hide {font-size: 13px}';
     document.body.appendChild(fontsize);
 };
 
