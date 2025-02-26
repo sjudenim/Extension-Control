@@ -1,10 +1,10 @@
 :root {
-    --Bg: hsl(210,18%,13%);
-    --Fg: hsl(228,3%,66%);
-    --HeaderBg: hsl(208,18%,17%);
-    --AccentBg: hsl(180, 100%, 40%);
+    --Bg: hsl(208, 21%, 12%);
+    --Fg: hsl(208, 17%, 65%);
+    --HeaderBg: hsl(210, 22%, 14%);
+    --AccentBg: hsl(349, 47%, 43%);
     --AccentFg: hsl(228,3%,86%);
-    --HighlightBg: hsl(210,18%,16%);
+    --HighlightBg: hsl(208,21%,15%);
     --Red: hsl(357,55%,52%);
 }
 

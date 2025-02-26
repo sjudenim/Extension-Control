@@ -1,24 +1,14 @@
 :root {
-    --bg: hsl(0,0%,100%);
-    --fg: hsl(240,5%,65%);
-    --fgShadow: hsl(240,5%,59%);
-    --headerBg: hsl(240,3%,96%);
-    --headerHi:hsl(0,0%,28%);
-    --headerFg: hsl(349, 83%, 61%);
-    --extBgHi:hsl(240,3%,96%);
-    --extFgHi: hsl(0,0%,28%);
-    --extEn:   hsl(349, 83%, 61%);
-    --extEnHi:  hsl(349, 83%, 61%);
-    --menuBg: hsl(240,5%,82%);
-    --menuFgAct: hsl(360,100%,100%);
-    --menuFgActHi: hsl(0, 0%, 94%);
-    --menuBgHi:  hsl(0,0%,28%);
-    --menuBgHi2: hsl(349, 83%, 61%);
-    --desc: hsl(0,0%,28%);
-    --descShadow: hsl(0,0%,44%);
+    --Bg: hsl(39, 25%, 89%);
+    --Fg: hsl(0, 0%, 56%);
+    --HeaderBg: hsl(218, 5%, 32%);
+    --AccentBg: hsl(10, 91%, 65%);
+    --AccentFg: hsl(0,0%,100%);
+    --HighlightBg: hsl(39, 20%, 84%);
+    --Red: hsl(357,55%,52%);
 }
 
-@font-face {
+font-face {
     font-family: 'Quicksand';
     src: url('fonts/Quicksand-Medium.ttf') format('truetype');
 }
@@ -32,8 +22,8 @@ body {
     font-family: "Quicksand Medium", "Helvetica Neue", "Helvetica", sans-serif;
     min-width: 180px;
     min-height: 200px;
-    background: var(--bg);
-    color: var(--fg);
+    background: var(--Bg);
+    color: var(--Fg);
     margin: 0;
     padding: 1px 1px 10px 1px;
     cursor: default;
@@ -44,18 +34,19 @@ body {
 #header {
     position: fixed;
     top: 0;
+    left: -1px;
     font-family: "Quicksand Medium", "Helvetica Neue", "Helvetica", sans-serif;
     font-weight: 600;
     text-align: left;
-    padding: 15px 20px;
+    padding: 15px 16px;
     width: 100%;
-    background-color: var(--headerBg);
-    color: var(--headerFg);
+    background-color: var(--HeaderBg);
+    color: var(--AccentFg);
     cursor: pointer;
     z-index: 10;
 }
 
-.contrast { color: var(--headerHi); }
+.contrast { color: var(--AccentBg); }
 
 /* Extensions */
 #switcher {
@@ -67,10 +58,8 @@ body {
 }
 #switcher:hover { overflow-y: overlay; }
 
-.extension {
-    padding: 5px 25px;
-    cursor: pointer;
-}
+.extension { padding: 6px 12px; cursor: pointer; }
+
 .extension div {
     border: 1px solid transparent;
     width: 100%;
@@ -85,67 +74,46 @@ body {
     left: 1px;
     width: 20px;
 }
-.extension:hover {
-    background-color: var(--extBgHi);
-    color: var(--extFgHi);
-    font-weight: 600;
-}
-.extension.enabled, .extension.enabled:hover {
-    font-weight: 600;
-    color: var(--extEn);
-}
-.extension.enabled:hover { color: var(--extEnHi); }
+.extension:hover { background-color: var(--HighlightBg); color: var(--AccentFg); font-weight: 600; }
+
+.extension.enabled { font-weight: 500; color: var(--AccentBg); }
+
+.extension.enabled:hover { font-weight: 600; }
 
 /* Menu */
-#menu {
-    padding: 5px 15px;
-    white-space: nowrap;
-    overflow: hidden;
-}
+#menu { padding: 5px 15px; white-space: nowrap; overflow: hidden; }
+
 .info, .hide, .options, .uninstall {
     font-family: "Quicksand Semibold", "Helvetica Neue", "Helvetica", sans-serif;
     width: 48%;
     text-align: center;
     padding: 8px 0;
     border-radius: 3px;
-    background-color: var(--menuBg);
+    background-color: var(--HighlightBg);
 }
-.info {
-    float: left;
-    color: var(--menuFgAct);
-    cursor: pointer;
-}
-.hide {
-    float: right;
-    color: var(--menuFgAct);
-    cursor: pointer;
-}
+.info { float: left; color: var(--Fg); cursor: pointer; }
+
+.hide { float: right; color: var(--Fg); cursor: pointer; }
+
 .options {
     float: left;
     clear: left;
     margin-top: 5px;
-    color: var(--fg);
+    color: var(--Fg);
     cursor: default;
 }
-.options.optActive {
-    color: var(--menuFgAct);
-    cursor: pointer;
-}
-.info:hover, .hide:hover, .options.optActive:hover {
-    background-color: var(--menuBgHi);
-    color: var(--menuFgActHi) !important;
-}
+.options.optActive { color: var(--Fg); cursor: pointer; }
+
+.info:hover, .hide:hover, .options.optActive:hover { background-color: var(--AccentBg); color: var(--AccentFg) !important; }
+
 .uninstall {
     float: right;
     clear: right;
     margin-top: 5px;
-    color: var(--menuFgAct);
+    color: var(--Fg);
     cursor: pointer;
 }
-.uninstall:hover {
-    background-color: var(--menuBgHi2);
-    color: var(--menuFgActHi) !important;
-}
+.uninstall:hover { background-color: var(--Red); color: var(--AccentFg) !important; }
 
 /* Info */
 #txtdiv {
@@ -162,14 +130,10 @@ body {
 }
 #txtdiv p:last-of-type { margin-bottom: 0; }
 
-#txtdiv a {
-    cursor: pointer;
-    text-decoration: none;
-}
-.desc {
-    font-family: "Quicksand Semibold", "Helvetica Neue", "Helvetica", sans-serif;
-    color: var(--desc);
-}
+#txtdiv a { cursor: pointer; text-decoration: none; }
+
+.desc { font-family: "Quicksand Semibold", "Helvetica Neue", "Helvetica", sans-serif; color: var(--Fg); }
+
 #copy { cursor: pointer; }
 
 /* Scrollbar */
@@ -177,24 +141,20 @@ body {
 body { overflow: overlay !important; scroll-behavior: smooth; }
 
 /* Scrollbars */
-::-webkit-scrollbar {
-    border: 0;
-    width: 8px;
-    height: 8px;
-}
+::-webkit-scrollbar { border: 0; width: 8px; height: 8px; }
 
-::-webkit-scrollbar-track, ::-webkit-scrollbar-corner { background-color: var(--bg); }
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner { background-color: var(--Bg); }
 
 ::-webkit-scrollbar-track-piece:hover, ::-webkit-scrollbar-track-piece:active { background: linear-gradient(180deg, hsla(0, 0%, 53%, .2), transparent); }
 
 /* Scrollbar thumb */
 ::-webkit-scrollbar-thumb {
-    background-color: var(--secondFg);
-    border: 3px solid var(--bg);
+    background-color: var(--Fg);
+    border: 3px solid var(--Bg);
     border-radius: 4px;
 
 }
 
-::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active { background-color: var(--accent); }
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active { background-color: var(--AccentBg); }
 
 :-webkit-scrollbar-button { display: none !important; }

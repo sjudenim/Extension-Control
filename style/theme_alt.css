@@ -1,10 +1,10 @@
 :root {
-    --Bg: hsl(210,18%,13%);
-    --Fg: hsl(228,3%,66%);
-    --HeaderBg: hsl(208,18%,17%);
-    --AccentBg: hsl(180, 100%, 40%);
-    --AccentFg: hsl(228,3%,86%);
-    --HighlightBg: hsl(210,18%,16%);
+    --Bg: hsl(0, 0%, 100%);
+    --Fg: hsl(0, 0%, 42%);
+    --HeaderBg: hsl(240, 5%, 96%);
+    --AccentBg: hsl(174,100%,33%);
+    --AccentFg: hsl(0,0%,100%);
+    --HighlightBg: hsl(240, 5%, 92%);
     --Red: hsl(357,55%,52%);
 }
 
@@ -41,7 +41,7 @@ body {
     padding: 15px 16px;
     width: 100%;
     background-color: var(--HeaderBg);
-    color: var(--AccentFg);
+    color: var(--Fg);
     cursor: pointer;
     z-index: 10;
 }
@@ -74,7 +74,7 @@ body {
     left: 1px;
     width: 20px;
 }
-.extension:hover { background-color: var(--HighlightBg); color: var(--AccentFg); font-weight: 600; }
+.extension:hover { background-color: var(--HighlightBg); color: var(--Fg); font-weight: 600; }
 
 .extension.enabled { font-weight: 500; color: var(--AccentBg); }
 

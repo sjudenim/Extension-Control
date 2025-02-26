@@ -1,31 +1,25 @@
 function small() {
-    document.body.style.setProperty('--top', '53px');
+    document.body.style.setProperty('--top', '54px');
     document.body.style.setProperty('--height', '505px');
     var fontsize = document.createElement('style');
-    fontsize.innerHTML = '#header {font-size: 16px} body {font-size: 13px} .options, .uninstall, .info, .hide {font-size: 11px}';
+    fontsize.innerHTML = '#header {font-size: 15px} body {font-size: 12px} .options, .uninstall, .info, .hide {font-size: 11px}';
     document.body.appendChild(fontsize);
 };
 
 function medium() {
-    document.body.style.setProperty('--top', '53px');
+    document.body.style.setProperty('--top', '54px');
     document.body.style.setProperty('--height','510px');
     var fontsize = document.createElement('style');
-    fontsize.innerHTML = '#header {font-size: 17px} body {font-size: 14px} .options, .uninstall, .info, .hide {font-size: 12px}';
+    fontsize.innerHTML = '#header {font-size: 16px} body {font-size: 13px} .options, .uninstall, .info, .hide {font-size: 12px}';
     document.body.appendChild(fontsize);
 };
 
 function large() {
-    document.body.style.setProperty('--top', '53px');
+    document.body.style.setProperty('--top', '54px');
     document.body.style.setProperty('--height', '515px');
     var fontsize = document.createElement('style');
-    fontsize.innerHTML = '#header {font-size: 18px} body {font-size: 15px} .options, .uninstall, .info, .hide {font-size: 13px}';
+    fontsize.innerHTML = '#header {font-size: 17px} body {font-size: 14px} .options, .uninstall, .info, .hide {font-size: 13px}';
     document.body.appendChild(fontsize);
-};
-
-function gutter() {
-    var styleGut = document.createElement('style');
-    styleGut.innerHTML = '.extension, #menu {padding: 5px 15px 5px 20px;} #txtdiv {padding: 0 15px 0 20px} .extension.dev div::before {content:"$"} .extension.out div::before {content:"[]"}';
-    document.body.appendChild(styleGut);
 };
 
 function rmMenu() {
@@ -46,8 +40,7 @@ function options() {
 function setup() {
     chrome.storage.sync.get({
         'width': '200',
-        'fontsize': 'medium',
-        'os': ''
+        'fontsize': 'medium'
     }, function(start) {
         const width = start.width;
         document.body.style.maxWidth = width + 'px';
@@ -60,10 +53,6 @@ function setup() {
         }
         else {
             large();
-        }
-        const os = start.os;
-        if (os === 'win') {
-            font();
         }
     });
 };
@@ -90,11 +79,6 @@ function load() {
                             gut = true;
                             extItem.classList.add('out');
                         }
-                        if (info[i].installType === 'development') {
-                            gut = true;
-                            extItem.classList.remove('out');
-                            extItem.classList.add('dev');
-                        }
                         if (info[i].enabled === true) {
                             extItem.classList.add('enabled');
                         }
@@ -107,9 +91,7 @@ function load() {
             var remove = hidden.filter(e => !present.includes(e));
             hidden = hidden.filter(e => !remove.includes(e));
             chrome.storage.sync.set({'hidden': hidden});
-            if (gut === true) {
-                gutter();
-            }
+           
             run();
         });
     });
