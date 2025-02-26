@@ -92,7 +92,7 @@ body {
 
 .right {
     float: right;
-    left: -100px
+    margin-bottom: 5px
 }
 #extPage { cursor: pointer; }
 
